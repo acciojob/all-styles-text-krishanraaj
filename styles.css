@@ -1,31 +1,24 @@
-/* Reset all default browser margins/paddings */
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Target body to prevent full-width expansion */
-body {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-/* Required container styles */
+/* Container styles */
 .main {
-  width: 200px !important;
-  background-color: purple !important;
-  border-left: 5px solid green !important;
-  padding: 10px !important;
-  display: inline-block !important;
+  width: 200px;                   /* exact width */
+  background-color: purple;       /* rgb(128, 0, 128) */
+  border-left: 5px solid green;   /* left border */
+  padding: 10px;                  /* padding on all sides */
+  display: flex;                  /* ensure not full width block */
+  flex-direction: column;
 }
 
 /* Heading styles */
-.heading,
-#heading {
-  font-size: 20px !important;
-  color: white !important;
-  text-decoration: underline !important;
-  line-height: normal !important;
+#heading,
+.heading {
+  font-size: 20px;                /* exact size */
+  color: white;                   /* rgb(255, 255, 255) */
+  text-decoration: underline;     /* underline */
 }
